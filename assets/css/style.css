@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html body {
+ background-image: url("../images/starwar1.png");
+ background-size: cover;
+ 
+}
+
+.character {
+    width: 200 px;
+    height:180 px;
+    float: left;
+    border: 2px solid green;
+    margin-left:10px;
+    text-align:center;
+    background-color: white;
+}
+
+#characterrow {
+    height: 200px;
+    margin-top: 40px;
+ }
+#enemiesrow {
+    height: 200px;
+    margin-top: 40px;
+ }
+
+#defenderrow {
+    height: 200px;
+    margin-top: 40px;
+}
+
+
+img {
+    float: left;
+    padding: 5px 5px;
+}
+
+h3 {
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    border: 1px solid black;
+}
+
