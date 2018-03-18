@@ -38,9 +38,10 @@ $('.character').on("click",function(){
 })
 
 var i=0;
-
+var j=0;
 $("button").on("click",function(){
     i++;
+    
     console.log(defenderName);
     var obj1=retrieveObj(characterName);
     var obj2=retrieveObj(defenderName);
@@ -55,17 +56,23 @@ $("button").on("click",function(){
     
 
     //determine win and lose
-    if (obj1.hp<=0 && obj2.hp>0) {
+    if (obj1.hp<=0) {
         alert("You lost the game!") 
         i=0;
     }
     
 
     if (obj1.hp>0 && obj2.hp<=0) {      
-        alert("You win the game and please select the next defender!"); 
+        
         $(target2).remove();
         i=0;
-        
+        j++;
+        console.log(j);
+        if (j===3) {
+            alert("You win the final game");
+        } else {
+            alert("You win the game and please select the next defender!");    
+        }
     }
 
     
