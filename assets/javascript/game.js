@@ -22,7 +22,9 @@ $('.character').on("click",function(){
     count++;
     if (count===1) {
     characterName=$(this).attr("id");  
+    $("#characterrow").children("div").not(document.getElementById(characterName)).css("background-color","red");
     $("#characterrow").children("div").not(document.getElementById(characterName)).appendTo("#enemiesrow");
+    
     //$("#enemiesrow").children("div").not(document.getElementById(divId)).attr("class","enemy");
     }  
 })
