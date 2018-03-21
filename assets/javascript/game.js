@@ -33,6 +33,7 @@ $('.character').on("click",function(){
     count++;
     if (count>1 && $(this).attr("id")!==characterName) {
     defenderName=$(this).attr("id");
+    $(this).css({backgroundColor:"black", color:"white"});
     $(this).appendTo("#defenderrow");
     console.log(defenderName);
     //$("#enemiesrow").children("div").not(document.getElementById(divId)).attr("class","enemy");
